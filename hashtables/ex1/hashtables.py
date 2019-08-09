@@ -35,6 +35,7 @@ def hash(x, max):
 # '''
 def hash_table_insert(hash_table, key, value):
     index = hash(key, len(hash_table.storage))
+    print(f"Insert Print Statement {key} {index}")
 
     current_pair = hash_table.storage[index]
     last_pair = None
@@ -58,7 +59,6 @@ def hash_table_insert(hash_table, key, value):
 # '''
 def hash_table_remove(hash_table, key):
     index = hash(key, len(hash_table.storage))
-
     current_pair = hash_table.storage[index]
     last_pair = None
 
